@@ -226,6 +226,14 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
         "label": "django.contrib.auth.validators",
         "kind": 6,
         "isExtraImport": true,
@@ -361,7 +369,7 @@
         "kind": 5,
         "importPath": "coolsite.coolsite.settings",
         "description": "coolsite.coolsite.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'ProfileApp.apps.ProfileappConfig',\n    'ChatApp.apps.ChatappConfig'\n]",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'ProfileApp.apps.ProfileappConfig',\n    'ChatApp.apps.ChatappConfig',\n]",
         "detail": "coolsite.coolsite.settings",
         "documentation": {}
     },
@@ -460,7 +468,7 @@
         "kind": 5,
         "importPath": "coolsite.coolsite.settings",
         "description": "coolsite.coolsite.settings",
-        "peekOfCode": "STATICFILES_DIRS = [\n    os.path.join(BASE_DIR, 'AppStatic/static/'),    \n]\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# AUTH_USER_MODEL = 'ProfileApp.ProfileUser'",
+        "peekOfCode": "STATICFILES_DIRS = [\n    os.path.join(BASE_DIR, 'AppStatic/static/'),    \n]\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\nAUTH_USER_MODEL = 'ProfileApp.ProfileUser'",
         "detail": "coolsite.coolsite.settings",
         "documentation": {}
     },
@@ -469,7 +477,7 @@
         "kind": 5,
         "importPath": "coolsite.coolsite.settings",
         "description": "coolsite.coolsite.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# AUTH_USER_MODEL = 'ProfileApp.ProfileUser'",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\nAUTH_USER_MODEL = 'ProfileApp.ProfileUser'",
         "detail": "coolsite.coolsite.settings",
         "documentation": {}
     },
@@ -478,7 +486,7 @@
         "kind": 5,
         "importPath": "coolsite.coolsite.settings",
         "description": "coolsite.coolsite.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# AUTH_USER_MODEL = 'ProfileApp.ProfileUser'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\nAUTH_USER_MODEL = 'ProfileApp.ProfileUser'",
         "detail": "coolsite.coolsite.settings",
         "documentation": {}
     },
@@ -487,7 +495,7 @@
         "kind": 5,
         "importPath": "coolsite.coolsite.settings",
         "description": "coolsite.coolsite.settings",
-        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# AUTH_USER_MODEL = 'ProfileApp.ProfileUser'",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\nAUTH_USER_MODEL = 'ProfileApp.ProfileUser'",
         "detail": "coolsite.coolsite.settings",
         "documentation": {}
     },
@@ -496,7 +504,16 @@
         "kind": 5,
         "importPath": "coolsite.coolsite.settings",
         "description": "coolsite.coolsite.settings",
-        "peekOfCode": "MEDIA_URL = '/media/'\n# AUTH_USER_MODEL = 'ProfileApp.ProfileUser'",
+        "peekOfCode": "MEDIA_URL = '/media/'\nAUTH_USER_MODEL = 'ProfileApp.ProfileUser'",
+        "detail": "coolsite.coolsite.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_USER_MODEL",
+        "kind": 5,
+        "importPath": "coolsite.coolsite.settings",
+        "description": "coolsite.coolsite.settings",
+        "peekOfCode": "AUTH_USER_MODEL = 'ProfileApp.ProfileUser'",
         "detail": "coolsite.coolsite.settings",
         "documentation": {}
     },
@@ -523,7 +540,7 @@
         "kind": 6,
         "importPath": "coolsite.ProfileApp.migrations.0001_initial",
         "description": "coolsite.ProfileApp.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('auth', '0012_alter_user_first_name_max_length'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ProfileUser',\n            fields=[",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ProfileUser',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
         "detail": "coolsite.ProfileApp.migrations.0001_initial",
         "documentation": {}
     },
@@ -550,7 +567,7 @@
         "kind": 6,
         "importPath": "coolsite.ProfileApp.models",
         "description": "coolsite.ProfileApp.models",
-        "peekOfCode": "class ProfileUser(AbstractUser):\n    photo = models.ImageField(upload_to='photo_user/%Y/%m/%d/', blank=True, null=True, verbose_name='Фото пользователя')\n    slug = AutoSlugField(max_length=100, unique=True, populate_from=('username',), verbose_name=\"URL\")\n    status = models.BooleanField(default=True, verbose_name='Статус') # Online/Ofline\n    birthday = models.DateTimeField(blank=True, null=True, verbose_name='День рождения')\n    friends = models.ManyToManyField(get_user_model(), blank=True, related_name='friends+', verbose_name='Друзья')\n    groups = models.ManyToManyField(\n        'auth.Group',\n        related_name='%(app_label)s_%(class)s_groups+',\n        blank=True,",
+        "peekOfCode": "class ProfileUser(AbstractUser):\n    photo = models.ImageField(upload_to='photo_user/%Y/%m/%d/', blank=True, null=True, verbose_name='Фото пользователя')\n    slug = AutoSlugField(max_length=100, unique=True, populate_from=('username',), verbose_name=\"URL\")\n    status = models.BooleanField(default=True, verbose_name='Статус') # Online/Ofline\n    birthday = models.DateTimeField(blank=True, null=True, verbose_name='День рождения')\n    friends = models.ManyToManyField('ProfileUser', blank=True, related_name='friends+', verbose_name='Друзья')\n    groups = models.ManyToManyField(\n        'auth.Group',\n        related_name='%(app_label)s_%(class)s_groups+',\n        blank=True,",
         "detail": "coolsite.ProfileApp.models",
         "documentation": {}
     },

@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser 
+from django.contrib.auth.models import AbstractUser, User 
 from django_extensions.db.fields import AutoSlugField
 from django.urls import reverse
 from django.contrib.auth import get_user_model
@@ -10,7 +10,7 @@ class ProfileUser(AbstractUser):
     slug = AutoSlugField(max_length=100, unique=True, populate_from=('username',), verbose_name="URL")
     status = models.BooleanField(default=True, verbose_name='Статус') # Online/Ofline
     birthday = models.DateTimeField(blank=True, null=True, verbose_name='День рождения')
-    friends = models.ManyToManyField(get_user_model(), blank=True, related_name='friends+', verbose_name='Друзья')
+    friends = models.ManyToManyField('ProfileUser', blank=True, related_name='friends+', verbose_name='Друзья')
 
     groups = models.ManyToManyField(
         'auth.Group',
