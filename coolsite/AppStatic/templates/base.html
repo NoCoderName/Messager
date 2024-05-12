@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="{% static 'styles.css' %}" rel="stylesheet">
+    <title>{{ title }}</title>
+</head>
+
+<body>
+<header>
+  <span class="head_left">
+  {% for m in menu %}
+    <a href="{% url m.url_name %}" id="header" class="little_button">{{m.title}}</a>
+  {% endfor %}
+  </span>
+
+  <span class="head_right">
+    {% if request.user.is_authenticated %}
+      <p><a href="{% url 'profile_user:profile' prof_slug=user.slug %}">{{ user.username }}</a> | <a href="{% url 'logout' %}" id="header" class="little_button">Выйти</a></p>
+    {% else %}
+      <p><a href="{% url 'register' %}" class="little_button">Зарегистророваться</a><a href="{% url 'login' %}" class="little_button">Войти</a></p>
+    {% endif %}
+  </span>
+</header>
+
+{% block authentication %} 
+{% endblock authentication %}
+
+<div class="container">
+
+{% block content %}
+{% endblock content %}
+
+  <div class="footer" id="footer">
+    <p>&copy; Все права защищены.</p>
+    <p>&nbsp;</p>
+    <p>Администрация сайта не несет ответственность за ваше здоровье.</p>
+  </div>
+</div>
+</body>
+</html>

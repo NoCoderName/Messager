@@ -9,6 +9,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('ProfileApp.urls')),
     path('', include('ChatApp.urls')),
+    path('', include('LoginApp.urls')),
 ]
 
 

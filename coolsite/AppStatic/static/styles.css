@@ -1,0 +1,412 @@
+body {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(49, 45, 65);
+    color: #fff;
+}
+
+header {
+    width: 97%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(70, 57, 127);
+    border: 2px solid rgb(109, 91, 193);
+    display: flex; /* Используем flex-контейнер */
+    justify-content: center; /* Выравниваем элементы по горизонтали по центру */
+    align-items: center; /* Выравниваем элементы по вертикали по центру */
+}
+
+.head_right {
+    margin-left: 5%; 
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+	color: #fff;
+}
+
+hr {
+    height: 0px;
+    width: 500px;
+}   
+
+
+/* Стили для полоски прокрутки веб-страницы (webkit - Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+    width: 10px; /* Ширина полоски прокрутки */
+}
+
+/* Стили для полоски прокрутки */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(70, 57, 127); /* Цвет полоски прокрутки */
+    border-radius: 5px; /* Форма полоски прокрутки (скругленные углы) */
+}
+
+/* Стили для полоски прокрутки при наведении */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0056b3; /* Цвет полоски прокрутки при наведении */
+}
+
+/* Стили для полоски прокрутки при активации (перетаскивании) */
+::-webkit-scrollbar-thumb:active {
+    background-color: #003c80; /* Цвет полоски прокрутки при активации */
+}
+
+.little_button {
+	/* width: 40px; */
+    border: 0 solid #d0bce4;
+    border-radius: 20px;
+    padding: 7px;
+    margin: auto 5px;
+    margin: 0 10px 0 10px;
+    /* display: inline-block; */
+	font-size: 20px;
+    justify-content: center;
+    background-color: rgb(54, 44, 98);
+    color: #fff;
+}
+
+.little_button:hover {
+    background-color: rgb(90, 74, 159);
+    cursor:pointer;
+}
+
+.little_button:active {
+    background-color: #7900fb;
+}
+
+.text_center {
+    /* flex: 1; */
+    text-align: center;
+    float: left;
+	/* padding: 0; */
+    /* margin: auto; */
+}
+
+.container {
+    height: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    border-radius: 0 0 20px 20px;
+    background-color: rgb(34, 29, 58);
+}
+
+.footer {
+    height: 90px;
+    width: 100%;
+    margin-top: 10%;
+    box-sizing: border-box;
+
+    background: rgb(204, 204, 204, 0.43);
+    border-radius: 0 0 20px 20px;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 11px;
+    font-family: Vergdana, Geneva, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.scroll_container {
+    width: 600px; /* Задайте ширину контейнера, которая приведет к горизонтальной прокрутке */
+    white-space: nowrap; /* Предотвращает перенос текста на новую строку ? */
+    overflow-x: auto; /* Включает горизонтальную прокрутку при необходимости  */
+    width: 100%;
+    overflow-x: auto; /* Включает горизонтальную прокрутку */
+}
+
+.scroll_box {
+    width: 320px; /* Ширина элемента */
+    height: 600px; /* Высота элемента */
+    padding: 0;
+    flex: 1;
+    white-space:normal; /* Предотвращает перенос текста на новую строку */
+    background-color: #332147;
+    display: inline-block; /* Располагает элементы в строку */
+    margin-right: 10px; /* Отступ между элементами */
+    margin-left: 10px;
+    vertical-align: top; /* Выравнивание по верхнему краю */
+    border: 0;
+    border-radius: 10px;
+}
+
+.scroll_box:hover {
+    border: 1px solid rgb(109, 91, 193);
+    /* box-shadow: 110px solid rgb(109, 91, 193); */
+    box-shadow: 0px 4px 8px rgba(172, 3, 251, 0.9); /* Задает тень */
+}
+
+.page_content {
+    padding-left: 10px;
+}
+
+.main_content  {
+    padding-left: 10px;
+}
+
+.heading {
+    color: rgb(203, 193, 250)
+}
+
+.add_account {
+    margin-top: 30px;
+    margin-left: 0px;
+    padding: 5px;
+    flex: 1;
+    float: left;
+    background-color: rgb(70, 57, 127);
+    border: 2px solid rgb(109, 91, 193);
+    border-radius: 10px;
+}
+
+.back_home {
+    /* margin-top: 50px; */
+    margin: 30px auto auto 10px;
+    padding: 5px;
+    right: 0;
+    position: fixed;
+}
+
+.box_text {
+    padding-left: 20px;
+}
+
+.image-resize { 
+    width: 350px;
+    height: 300px;
+    background-color: #7900fb;
+    /* border-radius: 20px; */
+    /* overflow: hidden; */
+}
+
+.full_button {
+    width: 140px;
+    height: 20px;
+    border: 0 solid #7900fb;
+    border-radius: 10px;
+    padding: 7px 100px 7px 100px;
+    margin-top: 5px;
+    margin-left: 40px;
+	text-align: center;
+    font-size: 15px;
+    background-color: rgb(54, 44, 98);
+    color: #fff;
+}
+
+.full_button:hover {
+    background-color: rgb(90, 74, 159);
+    cursor:pointer;
+}
+
+.full_button:active {
+    background-color: #7900fb;
+}
+
+.read_post {
+    padding-block-end: 200px;
+}
+
+.show_post_photo {
+    width: 300px;
+    border-radius: 10px;
+    float: left;
+    margin: 20px;
+    justify-content: flex-end;
+}
+
+.content_article {
+    padding-left: 50px;
+}
+
+.about_the_article {
+    color: #78549c;
+}
+
+.container_manga {
+    flex: 1;
+    width: 100%;
+    /* height: 100vh; Высота контейнера, например, 100% высоты окна браузера */
+}
+
+.container_manga img {    
+    /* position: absolute; */
+    flex: 1;
+    /* top: 50%; */
+    margin-left: 150px;
+    /* transform: translate(-50%, -50%); */
+    max-width: 100%;  
+    max-height: 100%;
+}
+/* justify-content: center; выравнивание */
+
+.manga_chapter {
+    margin-top: 5%;
+    margin-left: 20px;
+    flex: 1;
+}
+
+
+.image_chapter {
+    display: none;
+}
+
+/* Отображаем информацию при активном чекбоксе */
+.info-toggle:checked + .image_chapter {
+    display: block;
+    margin-top: 10px;
+    margin-left: 135px;
+}
+
+/* Стили для чекбоксов и их меток */
+.info-toggle {
+    display: none;
+}
+
+.label_box {
+    cursor: pointer;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(54, 44, 98);
+}
+
+.label_box:hover {
+    background-color: rgb(90, 74, 159);
+}
+
+.register_user {
+    width: 350px;
+    margin: 100px auto 0 auto;
+    padding: 20px 0 30px 40px;
+    border-radius: 10px;
+    background: rgb(90, 74, 159);
+    box-shadow: 5px 5px 10px rgba(172, 3, 251, 0.9);
+}
+
+.form-input {
+    width: 300px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(54, 44, 98);
+    color: #fff;
+}
+
+.form-input:focus {
+    background-color: rgb(72, 60, 135);
+    border-bottom: 1px solid #ffdb4d;
+
+}
+
+.form-label {
+    display: inline-block;
+    min-width: 150px;
+    vertical-align: top;
+}
+
+.message-input {
+    width: 500px;
+    margin: 10px 10px 20px 10%;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(54, 44, 98);
+    color: #fff;
+}
+
+.message-input:focus {
+    background-color: rgb(72, 60, 135);
+    border-bottom: 1px solid #ffdb4d;
+    border: none;
+
+}
+
+.to_send_bt {
+    margin: 0 0 20px 50%;
+    width: 100px;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(54, 44, 98);
+    border-radius: 8px;
+    color: #fff;    
+    border: 0;
+}
+
+.to_send_bt:hover {
+    cursor: pointer;
+    border: 1px solid rgb(171, 153, 245);
+}
+
+.to_send_bt:active {
+    background-color: rgb(78, 66, 127);
+}
+
+.load_bt {
+    margin: 20px 0 10px 40px;
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(54, 44, 98);
+    border-radius: 8px;
+    color: #fff;    
+    border: 0;
+}
+
+.load_bt:hover {
+    cursor: pointer;
+    border: 2px solid rgb(171, 153, 245);
+    box-shadow: 5px 5px 10px rgba(172, 3, 251, 0.9);
+
+}
+
+.load_bt:active {
+    background-color: rgb(78, 66, 127);
+}
+
+.mess_block {
+    padding: 10px;
+    margin-right: 55%;
+    margin-left: 10%;
+    background-color: #7b00ff3a;
+    border-radius: 10px;
+}
+
+.mess_block_right {
+    padding: 10px;
+    margin-right: 10%;
+    margin-left: 55%;
+    background-color: #7b00ff0f;
+    border-radius: 10px;
+}
+
+.chat_user {
+    color: rgb(171, 221, 252);
+}
+
+.button_down {
+    margin: 0 auto;
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(54, 44, 98);
+    border-radius: 8px;
+    color: #fff;    
+    border: 0;
+}
+
+.button_down:hover {
+    cursor: pointer;
+    border: 1px solid rgb(171, 153, 245);
+}
+
+.button_down:active {
+    background-color: rgb(78, 66, 127);
+}

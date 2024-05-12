@@ -32,6 +32,14 @@
         "documentation": {}
     },
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -45,6 +53,22 @@
         "description": "django.apps",
         "isExtraImport": true,
         "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
         "documentation": {}
     },
     {
@@ -96,6 +120,14 @@
         "documentation": {}
     },
     {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -120,6 +152,22 @@
         "documentation": {}
     },
     {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "reverse",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -137,6 +185,14 @@
     },
     {
         "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
@@ -198,6 +254,119 @@
         "description": "django.core.wsgi",
         "isExtraImport": true,
         "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.auth",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "AuthenticationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "CreateView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "DetailView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "View",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "LoginView",
+        "importPath": "django.contrib.auth.views",
+        "description": "django.contrib.auth.views",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.views",
+        "documentation": {}
+    },
+    {
+        "label": "DataMixin",
+        "importPath": "ProfileApp.utils",
+        "description": "ProfileApp.utils",
+        "isExtraImport": true,
+        "detail": "ProfileApp.utils",
         "documentation": {}
     },
     {
@@ -285,14 +454,6 @@
         "documentation": {}
     },
     {
-        "label": "get_user_model",
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth",
-        "documentation": {}
-    },
-    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -369,7 +530,7 @@
         "kind": 5,
         "importPath": "coolsite.coolsite.settings",
         "description": "coolsite.coolsite.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'ProfileApp.apps.ProfileappConfig',\n    'ChatApp.apps.ChatappConfig',\n]",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'ProfileApp.apps.ProfileappConfig',\n    'ChatApp.apps.ChatappConfig',\n    'LoginApp.apps.LoginappConfig',",
         "detail": "coolsite.coolsite.settings",
         "documentation": {}
     },
@@ -522,7 +683,7 @@
         "kind": 5,
         "importPath": "coolsite.coolsite.urls",
         "description": "coolsite.coolsite.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('ProfileApp.urls')),\n    path('', include('ChatApp.urls')),\n]\nif settings.DEBUG:\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('ProfileApp.urls')),\n    path('', include('ChatApp.urls')),\n    path('', include('LoginApp.urls')),\n]\nif settings.DEBUG:\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
         "detail": "coolsite.coolsite.urls",
         "documentation": {}
     },
@@ -533,6 +694,69 @@
         "description": "coolsite.coolsite.wsgi",
         "peekOfCode": "application = get_wsgi_application()",
         "detail": "coolsite.coolsite.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "LoginappConfig",
+        "kind": 6,
+        "importPath": "coolsite.LoginApp.apps",
+        "description": "coolsite.LoginApp.apps",
+        "peekOfCode": "class LoginappConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'LoginApp'",
+        "detail": "coolsite.LoginApp.apps",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterUserForm",
+        "kind": 6,
+        "importPath": "coolsite.LoginApp.forms",
+        "description": "coolsite.LoginApp.forms",
+        "peekOfCode": "class RegisterUserForm(UserCreationForm):\n    username = forms.CharField(label='Логин', widget=forms.TextInput(attrs={'class': 'form-input'}))\n    email = forms.EmailField(label='Email', widget=forms.EmailInput(attrs={'class': 'form-input'}))\n    password1 = forms.CharField(label='Пороль', widget=forms.PasswordInput(attrs={'class': 'form-input'}))\n    password2 = forms.CharField(label='Повтор пороля', widget=forms.PasswordInput(attrs={'class': 'form-input'}))\n    class Meta:\n        model = get_user_model()\n        fields = ('username', 'email', 'password1', 'password2')\n        fields = ('username', 'email', 'password1', 'password2')\nclass LoginUserForm(AuthenticationForm):",
+        "detail": "coolsite.LoginApp.forms",
+        "documentation": {}
+    },
+    {
+        "label": "LoginUserForm",
+        "kind": 6,
+        "importPath": "coolsite.LoginApp.forms",
+        "description": "coolsite.LoginApp.forms",
+        "peekOfCode": "class LoginUserForm(AuthenticationForm):\n    username = forms.CharField(label='Логин', widget=forms.TextInput(attrs={'class': 'form-input'}))\n    password = forms.CharField(label='Пороль', widget=forms.PasswordInput(attrs={'class': 'form-input'}))",
+        "detail": "coolsite.LoginApp.forms",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "coolsite.LoginApp.urls",
+        "description": "coolsite.LoginApp.urls",
+        "peekOfCode": "urlpatterns = [\n    path('login/', LoginUser.as_view(), name='login'),\n    path('logout/', logout_user, name='logout'),\n    path('register/', RegisterUser.as_view(), name='register'),\n]",
+        "detail": "coolsite.LoginApp.urls",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterUser",
+        "kind": 6,
+        "importPath": "coolsite.LoginApp.views",
+        "description": "coolsite.LoginApp.views",
+        "peekOfCode": "class RegisterUser(DataMixin, CreateView):\n    form_class = RegisterUserForm\n    template_name = 'LoginApp/register.html'\n    success_url = reverse_lazy('login')\n    def get_context_data(self, *, object_name_list=None, **kwargs):\n        context = super().get_context_data(**kwargs)\n        c_def = self.get_user_context(title='Регистрация')\n        return dict(list(context.items()) + list(c_def.items()))\n    def form_valid(self, form):\n        user = form.save()",
+        "detail": "coolsite.LoginApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "LoginUser",
+        "kind": 6,
+        "importPath": "coolsite.LoginApp.views",
+        "description": "coolsite.LoginApp.views",
+        "peekOfCode": "class LoginUser(DataMixin, LoginView):\n    form_class = LoginUserForm\n    template_name = 'LoginApp/login.html'\n    def get_context_data(self, *, object_name_list=None, **kwargs):\n        context = super().get_context_data(**kwargs)\n        c_def = self.get_user_context(title='Авторизация')\n        return dict(list(context.items()) + list(c_def.items()))\n    def get_success_url(self):\n        return reverse_lazy('profile_user:profile', kwargs={'prof_slug': self.request.user.slug})\ndef logout_user(request):",
+        "detail": "coolsite.LoginApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "logout_user",
+        "kind": 2,
+        "importPath": "coolsite.LoginApp.views",
+        "description": "coolsite.LoginApp.views",
+        "peekOfCode": "def logout_user(request):\n    logout(request)\n    return redirect('login')",
+        "detail": "coolsite.LoginApp.views",
         "documentation": {}
     },
     {
@@ -572,12 +796,57 @@
         "documentation": {}
     },
     {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "coolsite.ProfileApp.urls",
+        "description": "coolsite.ProfileApp.urls",
+        "peekOfCode": "app_name = 'profile_user'\nurlpatterns = [\n    path('', Plug.as_view(), name='home'),\n    path('profile/<slug:prof_slug>/', ProfileView.as_view(), name='profile'),\n]",
+        "detail": "coolsite.ProfileApp.urls",
+        "documentation": {}
+    },
+    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "coolsite.ProfileApp.urls",
         "description": "coolsite.ProfileApp.urls",
-        "peekOfCode": "urlpatterns = [\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', Plug.as_view(), name='home'),\n    path('profile/<slug:prof_slug>/', ProfileView.as_view(), name='profile'),\n]",
         "detail": "coolsite.ProfileApp.urls",
+        "documentation": {}
+    },
+    {
+        "label": "DataMixin",
+        "kind": 6,
+        "importPath": "coolsite.ProfileApp.utils",
+        "description": "coolsite.ProfileApp.utils",
+        "peekOfCode": "class DataMixin:\n    def get_user_context(self, **kwargs):\n        context = kwargs\n        context['menu'] = menu\n        if 'cat_selected' not in context:\n            context['cat_selected'] = 0\n        return context",
+        "detail": "coolsite.ProfileApp.utils",
+        "documentation": {}
+    },
+    {
+        "label": "menu",
+        "kind": 5,
+        "importPath": "coolsite.ProfileApp.utils",
+        "description": "coolsite.ProfileApp.utils",
+        "peekOfCode": "menu = [\n    {'title': 'Типо главная страница', 'url_name': 'profile_user:home'},\n    # {'title': 'Сообщения', 'url_name': '#'},\n    # {'title': 'Друзья', 'url_name': '#'},\n]\nclass DataMixin:\n    def get_user_context(self, **kwargs):\n        context = kwargs\n        context['menu'] = menu\n        if 'cat_selected' not in context:",
+        "detail": "coolsite.ProfileApp.utils",
+        "documentation": {}
+    },
+    {
+        "label": "ProfileView",
+        "kind": 6,
+        "importPath": "coolsite.ProfileApp.views",
+        "description": "coolsite.ProfileApp.views",
+        "peekOfCode": "class ProfileView(DataMixin, DetailView):\n    model = get_user_model()\n    template_name = 'ProfileApp/profile.html'\n    context_object_name = 'prof'\n    slug_url_kwarg = 'prof_slug'\n    def get_context_data(self, *, object_list=None, **kwargs):\n        context = super().get_context_data(**kwargs)\n        c_def = self.get_user_context(title='Профиль')\n        return dict(list(context.items()) + list(c_def.items()))\n# Заглушка",
+        "detail": "coolsite.ProfileApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "Plug",
+        "kind": 6,
+        "importPath": "coolsite.ProfileApp.views",
+        "description": "coolsite.ProfileApp.views",
+        "peekOfCode": "class Plug(DataMixin, View):\n    template_name = 'ProfileApp/home.html'\n    context_object_name = 'prof'\n    def get(self, request, *args, **kwargs):\n        context = self.get_context_data()\n        return render(request, self.template_name, context)\n    def get_context_data(self, *, object_list=None, **kwargs):\n        c_def = self.get_user_context(title='Стена')\n        return c_def",
+        "detail": "coolsite.ProfileApp.views",
         "documentation": {}
     },
     {

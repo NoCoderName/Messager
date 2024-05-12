@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div>
+    {% if prof.photo %}
+        <span class="show_post_photo">
+            <img src="{{ prof.photo.url }}" style="width: 300px; border-radius: 10px;">
+        </span>
+    {% endif %}
+
+    <a href="#">редактировать</a>
+    <hr>
+</div>
+{% endblock %}
