@@ -1,6 +1,9 @@
+import django.db
+from django.db.models.query import QuerySet
+from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
 from django.contrib.auth import get_user_model
-from django.views.generic import DetailView, View
+from django.views.generic import DetailView, View, ListView
 
 from .utils import DataMixin
 
@@ -30,3 +33,23 @@ class Plug(DataMixin, View):
         c_def = self.get_user_context(title='Стена')
         return c_def
     
+
+class Friends(DataMixin, ListView):
+    model = get_user_model()
+    template_name = 'ProfileApp/friends.html'
+    context_object_name = 'friends'
+
+    def get_queryset(self):
+        username = self.request.GET.get('username')
+
+        if username:
+            print(get_user_model().objects.filter(username__iregex=username))
+            return get_user_model().objects.filter(username__iregex=username)
+        else:  
+            return get_user_model().objects.all()
+
+    def get_context_data(self,  *, object_list=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        c_def = self.get_user_context(title='Поиск')
+        
+        return dict(list(context.items()) + list(c_def.items()))

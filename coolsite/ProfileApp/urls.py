@@ -7,4 +7,5 @@ app_name = 'profile_user'
 urlpatterns = [
     path('', Plug.as_view(), name='home'),
     path('profile/<slug:prof_slug>/', ProfileView.as_view(), name='profile'),
+    path('search/', Friends.as_view(), name='friends')
 ]

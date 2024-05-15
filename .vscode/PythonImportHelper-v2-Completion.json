@@ -64,6 +64,15 @@
         "documentation": {}
     },
     {
+        "label": "django.db",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db",
+        "description": "django.db",
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -354,6 +363,14 @@
         "documentation": {}
     },
     {
+        "label": "ListView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
         "label": "LoginView",
         "importPath": "django.contrib.auth.views",
         "description": "django.contrib.auth.views",
@@ -451,6 +468,30 @@
         "description": "django.utils.safestring",
         "isExtraImport": true,
         "detail": "django.utils.safestring",
+        "documentation": {}
+    },
+    {
+        "label": "QuerySet",
+        "importPath": "django.db.models.query",
+        "description": "django.db.models.query",
+        "isExtraImport": true,
+        "detail": "django.db.models.query",
+        "documentation": {}
+    },
+    {
+        "label": "HttpRequest",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
         "documentation": {}
     },
     {
@@ -800,7 +841,7 @@
         "kind": 5,
         "importPath": "coolsite.ProfileApp.urls",
         "description": "coolsite.ProfileApp.urls",
-        "peekOfCode": "app_name = 'profile_user'\nurlpatterns = [\n    path('', Plug.as_view(), name='home'),\n    path('profile/<slug:prof_slug>/', ProfileView.as_view(), name='profile'),\n]",
+        "peekOfCode": "app_name = 'profile_user'\nurlpatterns = [\n    path('', Plug.as_view(), name='home'),\n    path('profile/<slug:prof_slug>/', ProfileView.as_view(), name='profile'),\n    path('search/', Friends.as_view(), name='friends')\n]",
         "detail": "coolsite.ProfileApp.urls",
         "documentation": {}
     },
@@ -809,7 +850,7 @@
         "kind": 5,
         "importPath": "coolsite.ProfileApp.urls",
         "description": "coolsite.ProfileApp.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', Plug.as_view(), name='home'),\n    path('profile/<slug:prof_slug>/', ProfileView.as_view(), name='profile'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', Plug.as_view(), name='home'),\n    path('profile/<slug:prof_slug>/', ProfileView.as_view(), name='profile'),\n    path('search/', Friends.as_view(), name='friends')\n]",
         "detail": "coolsite.ProfileApp.urls",
         "documentation": {}
     },
@@ -827,7 +868,7 @@
         "kind": 5,
         "importPath": "coolsite.ProfileApp.utils",
         "description": "coolsite.ProfileApp.utils",
-        "peekOfCode": "menu = [\n    {'title': 'Типо главная страница', 'url_name': 'profile_user:home'},\n    # {'title': 'Сообщения', 'url_name': '#'},\n    # {'title': 'Друзья', 'url_name': '#'},\n]\nclass DataMixin:\n    def get_user_context(self, **kwargs):\n        context = kwargs\n        context['menu'] = menu\n        if 'cat_selected' not in context:",
+        "peekOfCode": "menu = [\n    {'title': 'Типо главная страница', 'url_name': 'profile_user:home'},\n    {'title': 'Друзья', 'url_name': 'profile_user:friends'},\n    # {'title': 'Друзья', 'url_name': '#'},\n]\nclass DataMixin:\n    def get_user_context(self, **kwargs):\n        context = kwargs\n        context['menu'] = menu\n        if 'cat_selected' not in context:",
         "detail": "coolsite.ProfileApp.utils",
         "documentation": {}
     },
@@ -845,7 +886,16 @@
         "kind": 6,
         "importPath": "coolsite.ProfileApp.views",
         "description": "coolsite.ProfileApp.views",
-        "peekOfCode": "class Plug(DataMixin, View):\n    template_name = 'ProfileApp/home.html'\n    context_object_name = 'prof'\n    def get(self, request, *args, **kwargs):\n        context = self.get_context_data()\n        return render(request, self.template_name, context)\n    def get_context_data(self, *, object_list=None, **kwargs):\n        c_def = self.get_user_context(title='Стена')\n        return c_def",
+        "peekOfCode": "class Plug(DataMixin, View):\n    template_name = 'ProfileApp/home.html'\n    context_object_name = 'prof'\n    def get(self, request, *args, **kwargs):\n        context = self.get_context_data()\n        return render(request, self.template_name, context)\n    def get_context_data(self, *, object_list=None, **kwargs):\n        c_def = self.get_user_context(title='Стена')\n        return c_def\nclass Friends(DataMixin, ListView):",
+        "detail": "coolsite.ProfileApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "Friends",
+        "kind": 6,
+        "importPath": "coolsite.ProfileApp.views",
+        "description": "coolsite.ProfileApp.views",
+        "peekOfCode": "class Friends(DataMixin, ListView):\n    model = get_user_model()\n    template_name = 'ProfileApp/friends.html'\n    context_object_name = 'friends'\n    def get_queryset(self):\n        username = self.request.GET.get('username')\n        if username:\n            print(get_user_model().objects.filter(username__iregex=username))\n            return get_user_model().objects.filter(username__iregex=username)\n        else:  ",
         "detail": "coolsite.ProfileApp.views",
         "documentation": {}
     },
