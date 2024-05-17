@@ -64,15 +64,6 @@
         "documentation": {}
     },
     {
-        "label": "django.db",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.db",
-        "description": "django.db",
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -193,6 +184,22 @@
         "documentation": {}
     },
     {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -210,6 +217,14 @@
     },
     {
         "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
@@ -468,30 +483,6 @@
         "description": "django.utils.safestring",
         "isExtraImport": true,
         "detail": "django.utils.safestring",
-        "documentation": {}
-    },
-    {
-        "label": "QuerySet",
-        "importPath": "django.db.models.query",
-        "description": "django.db.models.query",
-        "isExtraImport": true,
-        "detail": "django.db.models.query",
-        "documentation": {}
-    },
-    {
-        "label": "HttpRequest",
-        "importPath": "django.http",
-        "description": "django.http",
-        "isExtraImport": true,
-        "detail": "django.http",
-        "documentation": {}
-    },
-    {
-        "label": "HttpResponse",
-        "importPath": "django.http",
-        "description": "django.http",
-        "isExtraImport": true,
-        "detail": "django.http",
         "documentation": {}
     },
     {
@@ -841,7 +832,7 @@
         "kind": 5,
         "importPath": "coolsite.ProfileApp.urls",
         "description": "coolsite.ProfileApp.urls",
-        "peekOfCode": "app_name = 'profile_user'\nurlpatterns = [\n    path('', Plug.as_view(), name='home'),\n    path('profile/<slug:prof_slug>/', ProfileView.as_view(), name='profile'),\n    path('search/', Friends.as_view(), name='friends')\n]",
+        "peekOfCode": "app_name = 'profile_user'\nurlpatterns = [\n    path('', Plug.as_view(), name='home'),\n    path('profile/<slug:prof_slug>/', ProfileView.as_view(), name='profile'),\n    path('friends/', Friends.as_view(), name='friends'),\n    path('add_friends/<slug:slug>/', AddFriends.as_view(), name='add_friends'),\n]",
         "detail": "coolsite.ProfileApp.urls",
         "documentation": {}
     },
@@ -850,7 +841,7 @@
         "kind": 5,
         "importPath": "coolsite.ProfileApp.urls",
         "description": "coolsite.ProfileApp.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', Plug.as_view(), name='home'),\n    path('profile/<slug:prof_slug>/', ProfileView.as_view(), name='profile'),\n    path('search/', Friends.as_view(), name='friends')\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', Plug.as_view(), name='home'),\n    path('profile/<slug:prof_slug>/', ProfileView.as_view(), name='profile'),\n    path('friends/', Friends.as_view(), name='friends'),\n    path('add_friends/<slug:slug>/', AddFriends.as_view(), name='add_friends'),\n]",
         "detail": "coolsite.ProfileApp.urls",
         "documentation": {}
     },
@@ -896,6 +887,15 @@
         "importPath": "coolsite.ProfileApp.views",
         "description": "coolsite.ProfileApp.views",
         "peekOfCode": "class Friends(DataMixin, ListView):\n    model = get_user_model()\n    template_name = 'ProfileApp/friends.html'\n    context_object_name = 'friends'\n    def get_queryset(self):\n        username = self.request.GET.get('username')\n        if username:\n            print(get_user_model().objects.filter(username__iregex=username))\n            return get_user_model().objects.filter(username__iregex=username)\n        else:  ",
+        "detail": "coolsite.ProfileApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "AddFriends",
+        "kind": 6,
+        "importPath": "coolsite.ProfileApp.views",
+        "description": "coolsite.ProfileApp.views",
+        "peekOfCode": "class AddFriends(View):\n    slug_url_kwarg = 'slug'\n    def get(self, request, *args, **kwargs):\n        friend = get_user_model().objects.get(slug=kwargs.get('slug'))\n        request.user.friends.add(friend)\n        return redirect(reverse('profile_user:profile', kwargs={'prof_slug': kwargs.get('slug')}))",
         "detail": "coolsite.ProfileApp.views",
         "documentation": {}
     },

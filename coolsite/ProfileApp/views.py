@@ -1,8 +1,6 @@
-import django.db
-from django.db.models.query import QuerySet
-from django.http import HttpRequest, HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth import get_user_model
+from django.urls import reverse_lazy, reverse
 from django.views.generic import DetailView, View, ListView
 
 from .utils import DataMixin
@@ -50,6 +48,17 @@ class Friends(DataMixin, ListView):
 
     def get_context_data(self,  *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
-        c_def = self.get_user_context(title='Поиск')
+        c_def = self.get_user_context(title='Друзья')
         
         return dict(list(context.items()) + list(c_def.items()))
+
+
+# Прототип. Нужно будет по другому реализовать
+class AddFriends(View):
+    slug_url_kwarg = 'slug'
+
+    def get(self, request, *args, **kwargs):
+        friend = get_user_model().objects.get(slug=kwargs.get('slug'))
+        request.user.friends.add(friend)
+
+        return redirect(reverse('profile_user:profile', kwargs={'prof_slug': kwargs.get('slug')}))
