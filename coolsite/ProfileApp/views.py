@@ -35,20 +35,19 @@ class Plug(DataMixin, View):
 class Friends(DataMixin, ListView):
     model = get_user_model()
     template_name = 'ProfileApp/friends.html'
-    context_object_name = 'friends'
+    context_object_name = 'friends'             # нужно будет поменять на "подписки"
 
     def get_queryset(self):
         username = self.request.GET.get('username')
 
         if username:
-            print(get_user_model().objects.filter(username__iregex=username))
             return get_user_model().objects.filter(username__iregex=username)
         else:  
-            return get_user_model().objects.all()
+            return get_user_model().objects.get(username=self.request.user.username).friends.all() #
 
     def get_context_data(self,  *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
-        c_def = self.get_user_context(title='Друзья')
+        c_def = self.get_user_context(title='Подписки')
         
         return dict(list(context.items()) + list(c_def.items()))
 

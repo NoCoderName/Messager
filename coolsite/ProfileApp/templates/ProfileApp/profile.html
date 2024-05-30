@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load prof_tags %}
+
 
 {% block content %}
 
@@ -10,10 +12,20 @@
         <li class="image_resize"><img src="{% static 'no_avatar.jpg' %}" style="width: 320px; height: 400px; border-radius: 10px 10px 0 0;"></li>
     {% endif %}
     <span>{{ prof.username }}</span>
-    <hr>
+    <br>
     <ul>
-        <li><a class="little_button" href="#">редактировать</a></li><hr>
-        <li><a class="little_button" href="{% url 'profile_user:add_friends' slug=prof.slug %}">Подписаться</a></li>
+        <li><a href="{% url 'profile_user:friends' %}">Подписки {{ prof.friends.count }}</a></li>
+        {% if prof.username == request.user.username %}
+            <li><a class="little_button" href="#">редактировать</a></li><br>
+        {% endif %}
+        
+        {% exclude_signed request.user.username prof.username as exclude_signed %}
+
+        {% if prof.username != request.user.username %}
+            {% if exclude_signed %}
+                <li><a class="little_button" href="{% url 'profile_user:add_friends' slug=prof.slug %}">Подписаться</a></li>
+            {% endif %}
+        {% endif %}
     </ul>
 </div>
 {% endblock %}

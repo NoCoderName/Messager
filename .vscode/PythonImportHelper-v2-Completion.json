@@ -289,6 +289,14 @@
         "documentation": {}
     },
     {
+        "label": "template",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
         "label": "django.contrib.auth",
         "kind": 6,
         "isExtraImport": true,
@@ -315,6 +323,14 @@
     },
     {
         "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
         "importPath": "django.contrib.auth",
         "description": "django.contrib.auth",
         "isExtraImport": true,
@@ -801,6 +817,24 @@
         "documentation": {}
     },
     {
+        "label": "exclude_signed",
+        "kind": 2,
+        "importPath": "coolsite.ProfileApp.templatetags.prof_tags",
+        "description": "coolsite.ProfileApp.templatetags.prof_tags",
+        "peekOfCode": "def exclude_signed(log_username, subscribe_user):\n    print('__________________________________________________________')\n    log_user = get_user_model().objects.get(username=log_username)\n    if log_user.friends.filter(username=subscribe_user).exists():\n        return False\n    else:\n        return True",
+        "detail": "coolsite.ProfileApp.templatetags.prof_tags",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 5,
+        "importPath": "coolsite.ProfileApp.templatetags.prof_tags",
+        "description": "coolsite.ProfileApp.templatetags.prof_tags",
+        "peekOfCode": "register = template.Library()\n@register.simple_tag(name='exclude_signed')\ndef exclude_signed(log_username, subscribe_user):\n    print('__________________________________________________________')\n    log_user = get_user_model().objects.get(username=log_username)\n    if log_user.friends.filter(username=subscribe_user).exists():\n        return False\n    else:\n        return True",
+        "detail": "coolsite.ProfileApp.templatetags.prof_tags",
+        "documentation": {}
+    },
+    {
         "label": "ProfileAdmin",
         "kind": 6,
         "importPath": "coolsite.ProfileApp.admin",
@@ -886,7 +920,7 @@
         "kind": 6,
         "importPath": "coolsite.ProfileApp.views",
         "description": "coolsite.ProfileApp.views",
-        "peekOfCode": "class Friends(DataMixin, ListView):\n    model = get_user_model()\n    template_name = 'ProfileApp/friends.html'\n    context_object_name = 'friends'\n    def get_queryset(self):\n        username = self.request.GET.get('username')\n        if username:\n            print(get_user_model().objects.filter(username__iregex=username))\n            return get_user_model().objects.filter(username__iregex=username)\n        else:  ",
+        "peekOfCode": "class Friends(DataMixin, ListView):\n    model = get_user_model()\n    template_name = 'ProfileApp/friends.html'\n    context_object_name = 'friends'             # нужно будет поменять на \"подписки\"\n    def get_queryset(self):\n        username = self.request.GET.get('username')\n        if username:\n            return get_user_model().objects.filter(username__iregex=username)\n        else:  \n            return get_user_model().objects.get(username=self.request.user.username).friends.all() #",
         "detail": "coolsite.ProfileApp.views",
         "documentation": {}
     },
