@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if not chat %}
+    <div class="panel panel-body">
+        Невозможно начать беседу. Не найден пользователь или вы не имеете доступа к данной беседе.
+    </div>
+{% else %}
+    {% load tz %}
+    {% if chat %}
+        <div id="messages" class="panel">
+            <div id="innerMessages">
+                {% for message in chat.message_set.all %}
+                    <p>{{ message.author }}</p>
+                    <p>{{ message }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+    <div id="message_form">
+        <form id="message-form" class="panel panel-body" method="post" >
+            {% csrf_token %}
+            {% for f in form %}
+            {{ f }}
+            {% endfor %}        
+            <button type="submit" class="to_send_bt">Отправить</button>    
+        </form>
+    </div>
+{% endif %}
+{% endblock %}

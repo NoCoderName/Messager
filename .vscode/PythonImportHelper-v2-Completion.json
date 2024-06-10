@@ -1,66 +1,34 @@
 [
     {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
         "isExtraImport": true,
-        "detail": "django.contrib",
+        "detail": "django.conf",
         "documentation": {}
     },
     {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
         "isExtraImport": true,
-        "detail": "django.contrib",
+        "detail": "django.conf",
         "documentation": {}
     },
     {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
         "isExtraImport": true,
-        "detail": "django.contrib",
+        "detail": "django.db",
         "documentation": {}
     },
     {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
         "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
+        "detail": "django.db",
         "documentation": {}
     },
     {
@@ -104,31 +72,193 @@
         "documentation": {}
     },
     {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
+        "label": "django.db.models.deletion",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "django.test",
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
         "documentation": {}
     },
     {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
+        "label": "django.utils.timezone",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "django.test",
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "detail": "django.utils.timezone",
         "documentation": {}
     },
     {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
+        "label": "template",
+        "importPath": "django",
+        "description": "django",
         "isExtraImport": true,
-        "detail": "django.test",
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "template",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
         "documentation": {}
     },
     {
         "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
         "importPath": "django.urls",
         "description": "django.urls",
         "isExtraImport": true,
@@ -200,44 +330,60 @@
         "documentation": {}
     },
     {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
         "isExtraImport": true,
-        "detail": "django.shortcuts",
+        "detail": "django.utils",
         "documentation": {}
     },
     {
-        "label": "redirect",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
+        "label": "gettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
         "isExtraImport": true,
-        "detail": "django.shortcuts",
+        "detail": "django.utils.translation",
         "documentation": {}
     },
     {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
         "isExtraImport": true,
-        "detail": "django.shortcuts",
+        "detail": "django.test",
         "documentation": {}
     },
     {
-        "label": "redirect",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
         "isExtraImport": true,
-        "detail": "django.shortcuts",
+        "detail": "django.test",
         "documentation": {}
     },
     {
-        "label": "os",
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "django.core.asgi",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "detail": "django.core.asgi",
         "documentation": {}
     },
     {
@@ -249,124 +395,51 @@
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
-        "label": "static",
-        "importPath": "django.conf.urls.static",
-        "description": "django.conf.urls.static",
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
         "isExtraImport": true,
-        "detail": "django.conf.urls.static",
+        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
-        "label": "settings",
-        "importPath": "coolsite",
-        "description": "coolsite",
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
         "isExtraImport": true,
-        "detail": "coolsite",
+        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
-        "label": "get_wsgi_application",
-        "importPath": "django.core.wsgi",
-        "description": "django.core.wsgi",
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
         "isExtraImport": true,
-        "detail": "django.core.wsgi",
+        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
         "isExtraImport": true,
-        "detail": "django",
+        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
-        "label": "template",
-        "importPath": "django",
-        "description": "django",
+        "label": "View",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
         "isExtraImport": true,
-        "detail": "django",
-        "documentation": {}
-    },
-    {
-        "label": "django.contrib.auth",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
-        "detail": "django.contrib.auth",
-        "documentation": {}
-    },
-    {
-        "label": "get_user_model",
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth",
-        "documentation": {}
-    },
-    {
-        "label": "login",
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth",
-        "documentation": {}
-    },
-    {
-        "label": "logout",
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth",
-        "documentation": {}
-    },
-    {
-        "label": "get_user_model",
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth",
-        "documentation": {}
-    },
-    {
-        "label": "get_user_model",
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth",
-        "documentation": {}
-    },
-    {
-        "label": "get_user_model",
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth",
-        "documentation": {}
-    },
-    {
-        "label": "UserCreationForm",
-        "importPath": "django.contrib.auth.forms",
-        "description": "django.contrib.auth.forms",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.forms",
-        "documentation": {}
-    },
-    {
-        "label": "AuthenticationForm",
-        "importPath": "django.contrib.auth.forms",
-        "description": "django.contrib.auth.forms",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.forms",
+        "detail": "django.views.generic",
         "documentation": {}
     },
     {
@@ -402,11 +475,11 @@
         "documentation": {}
     },
     {
-        "label": "LoginView",
-        "importPath": "django.contrib.auth.views",
-        "description": "django.contrib.auth.views",
+        "label": "Count",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
         "isExtraImport": true,
-        "detail": "django.contrib.auth.views",
+        "detail": "django.db.models",
         "documentation": {}
     },
     {
@@ -418,11 +491,76 @@
         "documentation": {}
     },
     {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
+        "label": "DataMixin",
+        "importPath": "ProfileApp.utils",
+        "description": "ProfileApp.utils",
         "isExtraImport": true,
-        "detail": "django.conf",
+        "detail": "ProfileApp.utils",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "coolsite",
+        "description": "coolsite",
+        "isExtraImport": true,
+        "detail": "coolsite",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "AuthenticationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "LoginView",
+        "importPath": "django.contrib.auth.views",
+        "description": "django.contrib.auth.views",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.views",
         "documentation": {}
     },
     {
@@ -457,15 +595,6 @@
         "importPath": "django.contrib.auth.validators",
         "description": "django.contrib.auth.validators",
         "detail": "django.contrib.auth.validators",
-        "documentation": {}
-    },
-    {
-        "label": "django.utils.timezone",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.utils.timezone",
-        "description": "django.utils.timezone",
-        "detail": "django.utils.timezone",
         "documentation": {}
     },
     {
@@ -511,6 +640,33 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "coolsite.ChatApp.migrations.0001_initial",
+        "description": "coolsite.ChatApp.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Chat',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "coolsite.ChatApp.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "get_companion",
+        "kind": 2,
+        "importPath": "coolsite.ChatApp.templatetags.chattags",
+        "description": "coolsite.ChatApp.templatetags.chattags",
+        "peekOfCode": "def get_companion(user, chat):\n    for u in chat.members.all():\n        if u != user:\n            return u\n    return None",
+        "detail": "coolsite.ChatApp.templatetags.chattags",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 5,
+        "importPath": "coolsite.ChatApp.templatetags.chattags",
+        "description": "coolsite.ChatApp.templatetags.chattags",
+        "peekOfCode": "register = template.Library()\n@register.simple_tag\ndef get_companion(user, chat):\n    for u in chat.members.all():\n        if u != user:\n            return u\n    return None",
+        "detail": "coolsite.ChatApp.templatetags.chattags",
+        "documentation": {}
+    },
+    {
         "label": "ChatappConfig",
         "kind": 6,
         "importPath": "coolsite.ChatApp.apps",
@@ -520,12 +676,75 @@
         "documentation": {}
     },
     {
+        "label": "MessageForm",
+        "kind": 6,
+        "importPath": "coolsite.ChatApp.forms",
+        "description": "coolsite.ChatApp.forms",
+        "peekOfCode": "class MessageForm(forms.ModelForm):\n    message = forms.CharField(label='Введите текст', widget=forms.TextInput(attrs={'class': 'message-input'}))\n    class Meta:\n        model = Message\n        fields = ['message']",
+        "detail": "coolsite.ChatApp.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Chat",
+        "kind": 6,
+        "importPath": "coolsite.ChatApp.models",
+        "description": "coolsite.ChatApp.models",
+        "peekOfCode": "class Chat(models.Model):\n    DIALOG = 'D'\n    CHAT = 'C'\n    CHAT_TYPE_CHOICES = (\n        (DIALOG, _('Dialog')),\n        (CHAT, _('Chat'))\n    )\n    type = models.CharField(\n        _('Тип'),\n        max_length=1,",
+        "detail": "coolsite.ChatApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "kind": 6,
+        "importPath": "coolsite.ChatApp.models",
+        "description": "coolsite.ChatApp.models",
+        "peekOfCode": "class Message(models.Model):\n    chat = models.ForeignKey(Chat, on_delete=models.PROTECT, verbose_name=_(\"Чат\"))\n    author = models.ForeignKey(get_user_model(), on_delete=models.PROTECT, verbose_name=_(\"Пользователь\"))\n    message = models.TextField(_(\"Сообщение\"))\n    pub_date = models.DateTimeField(_('Дата сообщения'), default=timezone.now)\n    is_readed = models.BooleanField(_('Прочитано'), default=False)\n    class Meta:\n        ordering=['pub_date']\n    def __str__(self):\n        return self.message",
+        "detail": "coolsite.ChatApp.models",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "coolsite.ChatApp.urls",
+        "description": "coolsite.ChatApp.urls",
+        "peekOfCode": "app_name = 'chat_app'\nurlpatterns = [\n    path('dialogs/', DialogsView.as_view(), name='dialogs'),\n    path('dialogs/create/<int:user_id>/', CreateDialogView.as_view(), name='create_dialog'),\n    path('dialogs/<int:chat_id>/', MessagesView.as_view(), name='messages'),\n]",
+        "detail": "coolsite.ChatApp.urls",
+        "documentation": {}
+    },
+    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "coolsite.ChatApp.urls",
         "description": "coolsite.ChatApp.urls",
-        "peekOfCode": "urlpatterns = [\n]",
+        "peekOfCode": "urlpatterns = [\n    path('dialogs/', DialogsView.as_view(), name='dialogs'),\n    path('dialogs/create/<int:user_id>/', CreateDialogView.as_view(), name='create_dialog'),\n    path('dialogs/<int:chat_id>/', MessagesView.as_view(), name='messages'),\n]",
         "detail": "coolsite.ChatApp.urls",
+        "documentation": {}
+    },
+    {
+        "label": "DialogsView",
+        "kind": 6,
+        "importPath": "coolsite.ChatApp.views",
+        "description": "coolsite.ChatApp.views",
+        "peekOfCode": "class DialogsView(DataMixin, View):\n    template_name = 'ChatApp/dialog.html'\n    def get(self, request):\n        context = self.get_user_context(title='Профиль')\n        context['user_profile'] = request.user\n        context['chats'] = Chat.objects.filter(members__in=[self.request.user.id])\n        return render(request, self.template_name, context)\nclass MessagesView(DataMixin, View):\n    template_name = 'ChatApp/messages.html'\n    def get(self, request, chat_id):",
+        "detail": "coolsite.ChatApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "MessagesView",
+        "kind": 6,
+        "importPath": "coolsite.ChatApp.views",
+        "description": "coolsite.ChatApp.views",
+        "peekOfCode": "class MessagesView(DataMixin, View):\n    template_name = 'ChatApp/messages.html'\n    def get(self, request, chat_id):\n        try:\n            chat = Chat.objects.get(id=chat_id)\n            if request.user in chat.members.all():\n                chat.message_set.filter(is_readed=False).exclude(author=request.user).update(is_readed=True)\n            else:\n                chat = None\n        except Chat.DoesNotExist:",
+        "detail": "coolsite.ChatApp.views",
+        "documentation": {}
+    },
+    {
+        "label": "CreateDialogView",
+        "kind": 6,
+        "importPath": "coolsite.ChatApp.views",
+        "description": "coolsite.ChatApp.views",
+        "peekOfCode": "class CreateDialogView(View):\n    def get(self, request, user_id):\n        chats = Chat.objects.filter(members__in=[request.user.id, user_id], type=Chat.DIALOG).annotate(c=Count('members')).filter(c=2)\n        if chats.count() == 0:\n            chat = Chat.objects.create()\n            chat.members.add(request.user)\n            chat.members.add(user_id)\n        else:\n            chat = chats.first()\n        return redirect(reverse('chat_app:messages', kwargs={'chat_id': chat.id}))",
+        "detail": "coolsite.ChatApp.views",
         "documentation": {}
     },
     {
@@ -821,7 +1040,7 @@
         "kind": 2,
         "importPath": "coolsite.ProfileApp.templatetags.prof_tags",
         "description": "coolsite.ProfileApp.templatetags.prof_tags",
-        "peekOfCode": "def exclude_signed(log_username, subscribe_user):\n    print('__________________________________________________________')\n    log_user = get_user_model().objects.get(username=log_username)\n    if log_user.friends.filter(username=subscribe_user).exists():\n        return False\n    else:\n        return True",
+        "peekOfCode": "def exclude_signed(log_username, subscribe_user):\n    log_user = get_user_model().objects.get(username=log_username)\n    if log_user.friends.filter(username=subscribe_user).exists():\n        return False\n    else:\n        return True",
         "detail": "coolsite.ProfileApp.templatetags.prof_tags",
         "documentation": {}
     },
@@ -830,7 +1049,7 @@
         "kind": 5,
         "importPath": "coolsite.ProfileApp.templatetags.prof_tags",
         "description": "coolsite.ProfileApp.templatetags.prof_tags",
-        "peekOfCode": "register = template.Library()\n@register.simple_tag(name='exclude_signed')\ndef exclude_signed(log_username, subscribe_user):\n    print('__________________________________________________________')\n    log_user = get_user_model().objects.get(username=log_username)\n    if log_user.friends.filter(username=subscribe_user).exists():\n        return False\n    else:\n        return True",
+        "peekOfCode": "register = template.Library()\n@register.simple_tag(name='exclude_signed')\ndef exclude_signed(log_username, subscribe_user):\n    log_user = get_user_model().objects.get(username=log_username)\n    if log_user.friends.filter(username=subscribe_user).exists():\n        return False\n    else:\n        return True",
         "detail": "coolsite.ProfileApp.templatetags.prof_tags",
         "documentation": {}
     },
@@ -893,7 +1112,7 @@
         "kind": 5,
         "importPath": "coolsite.ProfileApp.utils",
         "description": "coolsite.ProfileApp.utils",
-        "peekOfCode": "menu = [\n    {'title': 'Типо главная страница', 'url_name': 'profile_user:home'},\n    {'title': 'Друзья', 'url_name': 'profile_user:friends'},\n    # {'title': 'Друзья', 'url_name': '#'},\n]\nclass DataMixin:\n    def get_user_context(self, **kwargs):\n        context = kwargs\n        context['menu'] = menu\n        if 'cat_selected' not in context:",
+        "peekOfCode": "menu = [\n    {'title': 'Типо главная страница', 'url_name': 'profile_user:home'},\n    {'title': 'Друзья', 'url_name': 'profile_user:friends'},\n    {'title': 'Сообщения', 'url_name': 'chat_app:dialogs'},\n]\nclass DataMixin:\n    def get_user_context(self, **kwargs):\n        context = kwargs\n        context['menu'] = menu\n        if 'cat_selected' not in context:",
         "detail": "coolsite.ProfileApp.utils",
         "documentation": {}
     },

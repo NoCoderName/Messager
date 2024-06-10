@@ -6,7 +6,6 @@ register = template.Library()
 
 @register.simple_tag(name='exclude_signed')
 def exclude_signed(log_username, subscribe_user):
-    print('__________________________________________________________')
     log_user = get_user_model().objects.get(username=log_username)
     
     if log_user.friends.filter(username=subscribe_user).exists():
