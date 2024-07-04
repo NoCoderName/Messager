@@ -1,98 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(49, 45, 65);
+    background-color: rgba(30, 30, 30, 1);
     color: #fff;
 }
 
 header {
-    width: 97%;
-    margin: 0 auto;
+    width: 96%;
+    margin: 1vw 10px;
     padding: 20px;
     border-radius: 20px;
-    background-color: rgb(70, 57, 127);
-    border: 2px solid rgb(109, 91, 193);
-    display: flex; /* Используем flex-контейнер */
-    justify-content: center; /* Выравниваем элементы по горизонтали по центру */
+    background-color: rgba(34, 35, 42, 1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    /* flex-direction: row-reverse; Переворачиваем направление flexbox */
+    justify-content: space-between; /* Равномерно распределяем элементы по горизонтали */
     align-items: center; /* Выравниваем элементы по вертикали по центру */
 }
 
 .head_right {
-    margin-left: 5%; 
+    float: right;
 }
 
-li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-	color: #fff;
-}
-
-hr {
-    height: 0px;
-    width: 500px;
-}   
-
-
-/* Стили для полоски прокрутки веб-страницы (webkit - Chrome, Safari, Opera) */
-::-webkit-scrollbar {
-    width: 10px; /* Ширина полоски прокрутки */
-}
-
-/* Стили для полоски прокрутки */
-::-webkit-scrollbar-thumb {
-    background-color: rgb(70, 57, 127); /* Цвет полоски прокрутки */
-    border-radius: 5px; /* Форма полоски прокрутки (скругленные углы) */
-}
-
-/* Стили для полоски прокрутки при наведении */
-::-webkit-scrollbar-thumb:hover {
-    background-color: #0056b3; /* Цвет полоски прокрутки при наведении */
-}
-
-/* Стили для полоски прокрутки при активации (перетаскивании) */
-::-webkit-scrollbar-thumb:active {
-    background-color: #003c80; /* Цвет полоски прокрутки при активации */
-}
-
-.little_button {
-	/* width: 40px; */
-    border: 0 solid #d0bce4;
+.sidebar {
+    width: 13%;
+    margin-left: 1vw;
+    display: flex;
+    background-color: rgba(34, 35, 42, 1);
     border-radius: 20px;
-    padding: 7px;
-    margin: auto 5px;
-    margin: 0 10px 0 10px;
-    /* display: inline-block; */
-	font-size: 20px;
-    justify-content: center;
-    background-color: rgb(54, 44, 98);
-    color: #fff;
-}
-
-.little_button:hover {
-    background-color: rgb(90, 74, 159);
-    cursor:pointer;
-}
-
-.little_button:active {
-    background-color: #7900fb;
-}
-
-.text_center {
-    /* flex: 1; */
-    text-align: center;
+    justify-content: space-between; /* Равномерно распределить элементы */
+    align-items: center; /* Выравниваем элементы по вертикали по центру */
     float: left;
-	/* padding: 0; */
-    /* margin: auto; */
 }
 
 .container {
-    height: 90%;
-    max-width: 1100px;
-    margin: 30px auto;
-    border-radius: 0 0 20px 20px;
-    background-color: rgb(34, 29, 58);
+    width: 83%;
+    margin-right: 1vw;
+    border-radius: 20px;
+    background-color: rgba(34, 35, 42, 1);
+    float: right;
 }
 
 .footer {
@@ -110,34 +60,128 @@ hr {
     text-align: center;
 }
 
-.scroll_container {
-    width: 600px; /* Задайте ширину контейнера, которая приведет к горизонтальной прокрутке */
-    white-space: nowrap; /* Предотвращает перенос текста на новую строку ? */
-    overflow-x: auto; /* Включает горизонтальную прокрутку при необходимости  */
-    width: 100%;
-    overflow-x: auto; /* Включает горизонтальную прокрутку */
+.sidebar_button {
+    border-radius: 13px;
+    padding: 7px;
+    margin: 1vw;
+    display: block;
+	font-size: 16px;
+    background-color: rgba(52, 54, 73, 1);
+    color: #fff;
 }
 
-.scroll_box {
-    width: 320px; /* Ширина элемента */
-    height: 600px; /* Высота элемента */
-    padding: 0;
-    flex: 1;
-    white-space:normal; /* Предотвращает перенос текста на новую строку */
-    background-color: #332147;
-    display: inline-block; /* Располагает элементы в строку */
-    margin-right: 10px; /* Отступ между элементами */
-    margin-left: 10px;
-    vertical-align: top; /* Выравнивание по верхнему краю */
-    border: 0;
-    border-radius: 10px;
+.sidebar_button:hover {
+    background-color: rgba(52, 54, 73, 0.607);
+    cursor:pointer;
 }
 
-.scroll_box:hover {
+.sidebar_button:active {
+    background-color: rgba(45, 47, 64, 0.607);
+}
+
+.little_button {
+    border-radius: 13px;
+    padding: 7px;
+    margin: 0 10px 0 10px;
+	font-size: 16px;
+    justify-content: center;
+    background-color: rgba(52, 54, 73, 1);
+    color: #fff;
+}
+
+.little_button:hover {
+    background-color: rgba(52, 54, 73, 0.607);
+    cursor:pointer;
+}
+
+.little_button:active {
+    background-color: rgba(45, 47, 64, 0.607);
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+	color: #fff;
+}
+
+hr {
+    height: 0px;
+    width: 500px;
+}   
+
+
+
+/* Стили для полоски прокрутки веб-страницы (webkit - Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+    width: 10px; /* Ширина полоски прокрутки */
+}
+
+/* Стили для полоски прокрутки */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(52, 54, 73, 1); /* Цвет полоски прокрутки */
+    border-radius: 5px; /* Форма полоски прокрутки (скругленные углы) */
+}
+
+/* Стили для полоски прокрутки при наведении */
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(52, 54, 73, 0.607); /* Цвет полоски прокрутки при наведении */
+}
+
+/* Стили для полоски прокрутки при активации (перетаскивании) */
+::-webkit-scrollbar-thumb:active {
+    background-color: rgba(45, 47, 64, 0.607); /* Цвет полоски прокрутки при активации */
+}
+
+.friends_container {
+    white-space: nowrap;
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
+
+}
+
+.friends_box {
+    display: inline-block;
+    width: 18vw;
+    height: 26vw;
+    margin: 1vw;
+    text-align: center;
+    background-color: rgb(29, 30, 38);
+    border-radius: 5%;
+}
+
+/* .scroll_box:hover {
     border: 1px solid rgb(109, 91, 193);
-    /* box-shadow: 110px solid rgb(109, 91, 193); */
-    box-shadow: 0px 4px 8px rgba(172, 3, 251, 0.9); /* Задает тень */
+    box-shadow: 0px 4px 8px rgba(172, 3, 251, 0.9);
+} */
+
+.image-resize {
+    width: 18vw;
+    height: 20vw;
+ }
+
+ .image-resize img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5% 5% 0 0;
+} 
+
+.search_box {
+    width: 76vw;
+    height: 3vw;
+    margin: 1vw auto 0 auto;
+    border: 1px solid #fff;
+    border-radius: 14px;
 }
+
+/* .search_box input { */
+    
+/* } */
 
 .page_content {
     padding-left: 10px;
@@ -168,18 +212,6 @@ hr {
     padding: 5px;
     right: 0;
     position: fixed;
-}
-
-.box_text {
-    padding-left: 20px;
-}
-
-.image-resize { 
-    width: 350px;
-    height: 300px;
-    background-color: #7900fb;
-    /* border-radius: 20px; */
-    /* overflow: hidden; */
 }
 
 .full_button {

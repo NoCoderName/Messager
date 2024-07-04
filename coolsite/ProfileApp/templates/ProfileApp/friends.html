@@ -2,25 +2,48 @@
 {% load static %}
 
 {% block content %}
-<form class="little_button" action="{% url 'profile_user:friends' %}" method="get">
+<form class="search_box" action="{% url 'profile_user:friends' %}" method="get">
     <input type="search" type="text" name="username" placeholder="Поиск">
     <button type="submit">Найти</button>
 </form>
 
-{% for f in friends %}
-<ul class="scroll_box">
+<div class="friends_container">
+    {% for f in friends %}
+        <ul class="friends_box">
+            {% if f.photo %}
+                <li class="image-resize"><img src="{{ f.photo.url }}"></li>
+            {% else %}
+                <li class="image-resize"><img src="{% static 'no_avatar.jpg' %}"></li>
+            {% endif %}
+            <li><a href="{{ f.get_absolute_url }}"><b>{{ f.username }}</b></a></li>
+            <li class="zaebal"><a href="{% url 'chat_app:create_dialog' user_id=f.id %}">Написать</a></li>
+        </ul>
+    {% endfor %}
 
-    {% if f.photo %}
-        <li class="image_resize"><img src="{{ f.photo.url }}" style="width: 320px; height: 400px; border-radius: 10px 10px 0 0;"></li>
-    {% else %}
-        <li class="image_resize"><img src="{% static 'no_avatar.jpg' %}" style="width: 320px; height: 400px; border-radius: 10px 10px 0 0;"></li>
-    {% endif %}
+    {% for f in friends %}
+        <ul class="friends_box">
+            {% if f.photo %}
+                <li class="image-resize"><img src="{{ f.photo.url }}"></li>
+            {% else %}
+                <li class="image-resize"><img src="{% static 'no_avatar.jpg' %}"></li>
+            {% endif %}
+            <li><a href="{{ f.get_absolute_url }}"><b>{{ f.username }}</b></a></li>
+            <li class="zaebal"><a href="{% url 'chat_app:create_dialog' user_id=f.id %}">Написать</a></li>
+        </ul>
+    {% endfor %}
 
-    <div class="box_text">
-            <li><b>{{ f.username }}</b></li><br>
-    </div>
-    <a href="{{ f.get_absolute_url }}" class="full_button">Перейти</a>
-</ul>
+    {% for f in friends %}
+    <ul class="friends_box">
+        {% if f.photo %}
+            <li class="image-resize"><img src="{{ f.photo.url }}"></li>
+        {% else %}
+            <li class="image-resize"><img src="{% static 'no_avatar.jpg' %}"></li>
+        {% endif %}
+        <li><a href="{{ f.get_absolute_url }}"><b>{{ f.username }}</b></a></li>
+        <li class="zaebal"><a href="{% url 'chat_app:create_dialog' user_id=f.id %}">Написать</a></li>
+    </ul>
 {% endfor %}
 
-{% endblock content %}
+</div>
+
+{% endblock %}

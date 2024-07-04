@@ -11,11 +11,9 @@
 
 <body>
 <header>
-  <span class="head_left">
-  {% for m in menu %}
-    <a href="{% url m.url_name %}" id="header" class="little_button">{{m.title}}</a>
-  {% endfor %}
-  </span>
+  <ul>
+    <li>Message.com</li>
+  </ul>
 
   <span class="head_right">
     {% if request.user.is_authenticated %}
@@ -25,6 +23,14 @@
     {% endif %}
   </span>
 </header>
+
+<div class="sidebar">
+  <span>
+    {% for m in menu %}
+      <a href="{% url m.url_name %}" id="header" class="sidebar_button">{{m.title}}</a>
+    {% endfor %}
+    </span>
+</div>
 
 {% block authentication %} 
 {% endblock authentication %}

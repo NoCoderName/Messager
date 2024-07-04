@@ -1,5 +1,5 @@
 menu = [
-    {'title': 'Типо главная страница', 'url_name': 'profile_user:home'},
+    {'title': 'Новости', 'url_name': 'profile_user:home'},
     {'title': 'Друзья', 'url_name': 'profile_user:friends'},
     {'title': 'Сообщения', 'url_name': 'chat_app:dialogs'},
 ]

@@ -1112,7 +1112,7 @@
         "kind": 5,
         "importPath": "coolsite.ProfileApp.utils",
         "description": "coolsite.ProfileApp.utils",
-        "peekOfCode": "menu = [\n    {'title': 'Типо главная страница', 'url_name': 'profile_user:home'},\n    {'title': 'Друзья', 'url_name': 'profile_user:friends'},\n    {'title': 'Сообщения', 'url_name': 'chat_app:dialogs'},\n]\nclass DataMixin:\n    def get_user_context(self, **kwargs):\n        context = kwargs\n        context['menu'] = menu\n        if 'cat_selected' not in context:",
+        "peekOfCode": "menu = [\n    {'title': 'Новости', 'url_name': 'profile_user:home'},\n    {'title': 'Друзья', 'url_name': 'profile_user:friends'},\n    {'title': 'Сообщения', 'url_name': 'chat_app:dialogs'},\n]\nclass DataMixin:\n    def get_user_context(self, **kwargs):\n        context = kwargs\n        context['menu'] = menu\n        if 'cat_selected' not in context:",
         "detail": "coolsite.ProfileApp.utils",
         "documentation": {}
     },
